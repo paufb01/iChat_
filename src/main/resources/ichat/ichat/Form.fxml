@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ichat.ichat.ManagementController">
+   <children>
+      <Button fx:id="btnCerca" layoutX="429.0" layoutY="90.0" mnemonicParsing="false" onAction="#GetMessages" text="Cercar" />
+      <Label fx:id="lblTitol" layoutX="257.0" layoutY="42.0" text="Introdueix una data:">
+         <font>
+            <Font name="Segoe UI" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtData" layoutX="253.0" layoutY="90.0" promptText="DIA/MES/ANY" />
+      <Pane layoutX="116.0" layoutY="130.0" prefHeight="239.0" prefWidth="442.0" style="-fx-border-color: #000000; -fx-border-radius: 15px;">
+         <children>
+            <Label layoutX="196.0" layoutY="14.0" text="Xat">
+               <font>
+                  <Font name="Consolas" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblMissatges" layoutX="33.0" layoutY="51.0" wrapText="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
